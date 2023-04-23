@@ -1,0 +1,27 @@
+
+#controls .play {behavior: url(./PIE.htc);display: block;
+    background: rgba(28, 43, 41, 0.49);    
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1c2b29,endColorstr=#1c2b29); 
+    zoom: 1;}
+#controls .play:hover {background: #00adef;}
+
+#controls .control-bar {behavior: url(./PIE.htc);display: block;
+    background: rgba(28, 43, 41, 0.49);
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1c2b29,endColorstr=#1c2b29); 
+    zoom: 1;}
+
+/*** video1 ***/
+#controls1 .play {behavior: url(./PIE.htc);display: block;
+    background: rgba(28, 43, 41, 0.49);    
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1c2b29,endColorstr=#1c2b29); 
+    zoom: 1;}
+#controls1 .play:hover {background: #00adef;}
+
+#controls1 .control-bar {behavior: url(./PIE.htc);display: block;
+    background: rgba(28, 43, 41, 0.49);
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1c2b29,endColorstr=#1c2b29); 
+    zoom: 1;}

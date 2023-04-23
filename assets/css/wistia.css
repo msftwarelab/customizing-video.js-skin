@@ -1,0 +1,392 @@
+#select-style #wistia #controls .control-bar #time {
+  padding: 0px;
+}
+
+
+/*** wistia ***/
+
+#wistia {
+  position: relative;
+  margin: 0px auto;
+  /* max-width: 960px; */
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 12px !important;
+}
+
+#wistia .video-container {
+  position: relative;
+  padding-bottom: 0 !important
+      /*56.25%;*/
+  ;
+  height: auto !important
+      /*0*/
+  ;
+  overflow: auto !important
+      /*hidden*/
+  ;
+}
+
+#wistia {
+  width: 100%;
+  height: 100%;
+  /* background: black; */
+}
+
+#wistia:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#wistia:-webkit-full-screen .video-container {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#wistia .video-container video {
+  position: relative !important
+      /*absolute*/
+  ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+#wistia .video-container .video-js {
+  position: unset;
+}
+
+#wistia .play-center {
+  width: 155px;
+  height: 129px;
+  margin: -35px auto 0px;
+  position: absolute;
+  top: 36%;
+  left: 0px;
+  right: 0px;
+  z-index: 9;
+  cursor: pointer;
+  opacity: 0.8;
+  background: url(../gfx/play-center.svg) no-repeat top left / 155px 155px;
+}
+
+#wistia .play-center:hover {
+  opacity: 0.9;
+  background: url(../gfx/play-center.svg) no-repeat top left / 155px 155px;
+}
+
+#wistia .play-center:after {
+  background: url(../gfx/play-center.svg) no-repeat top left / 155px 155px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  opacity: 0.7;
+}
+
+#wistia #controls {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2147483647;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgba(255, 99, 0, 0.9);
+}
+
+#wistia #controls .pp-button {
+  /* float: left; */
+  position: relative;
+  /* height: 35px; */
+  width: 50px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+  /* background: rgba(255, 201, 14, 0.8); */
+}
+
+#wistia #controls .pp-button:hover {
+  background-color: rgb(145, 59, 6)!important;
+}
+
+#wistia #controls .pp-button:after {
+  background: url(../gfx/play.png) no-repeat top left / 30px 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 4px;
+}
+
+#wistia #controls .playing:after {
+  background: url(../gfx/pause.png) no-repeat top left / 30px 30px;
+  /* background-position: bottom left !important; */
+}
+
+#wistia #controls>.fullscreen {
+  /* height: 32px; */
+  width: 50px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255, 201, 14, 0.8);
+}
+
+#wistia #controls .fullscreen:hover {
+  background-color: rgb(145, 59, 6)!important;
+}
+
+#wistia #controls .fullscreen img {
+  position: fixed;
+  height: 35px;
+  margin-left: -19px;
+  transition: scale 0.1s;
+}
+
+#wistia #controls .fullscreen img:active {
+  scale: 1.2;
+}
+
+/*#wistia #controls button.volume {margin: 0px 4px;}*/
+
+#wistia #controls .volume {
+  /* float: left;  */
+  /* padding: 12px 0px 12px 0px; */
+  position: relative;
+  width: 25px;
+  margin: 23px 0px 0px 8px;
+}
+
+#wistia #controls .volume img {
+  float: left;
+  width: 72%;
+}
+#wistia #controls .volume path {
+  fill: #fff;
+}
+#wistia #controls .volume path:hover {
+  fill: #00adef;
+}
+#wistia #controls .volume span.mute {
+  float: left;
+  color: #909598;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+
+#wistia #controls .volume.mute span.mute {
+  opacity: 1;
+  display: block;
+}
+
+#wistia #controls .volume.mute span.mute.hide {
+  opacity: 0;
+}
+#wistia #controls .volume svg {
+  cursor: pointer;
+  width: 25px;
+}
+#wistia #controls .volume #volume-bar {
+  width: 28px;
+  height: 83px;
+  bottom: 56px;
+  /* border: 1px solid #c0bfbf; */
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  /* bottom: 42px; */
+  left: -2px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 4px;
+}
+
+#wistia #controls .volume #volume-bar .played {
+  cursor: pointer;
+}
+
+#wistia #controls .volume #volume-bar .played .ui-slider-range {
+  background: #2c849a;
+}
+
+#wistia #controls .volume #volume-bar .played .ui-slider-handle {
+  display: block;
+  cursor: pointer;
+  background: fffff;
+  border: 1px solid #c0bfbf;
+  width: 6px;
+  height: 6px;
+  left: -2px !important;
+  border-radius: 6px;
+}
+
+#wistia #controls .volume #volume-bar #volume-control {
+  margin: 11px auto;
+  background-color: #555454;
+  width: 4px;
+  height: 63px;
+  border-radius: 6px;
+}
+
+#wistia #controls .control-bar {
+  height: 24px;
+  width: 100%;
+  /* margin: 0px 96px 0px 0px; */
+  position: relative;
+  border: 4px solid rgba(255, 201, 14, 0.8);
+  background: rgba(208, 183, 91, 0.80);
+}
+
+#wistia #controls .loaded {
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  cursor: pointer;
+  width: 0%;
+  background: rgba(250, 255, 109, 0.67);
+}
+
+#wistia #controls .played {
+  height: 2px;
+  position: r;
+  top: 11px;
+  right: 0px;
+  bottom: -2px;
+  left: 0px;
+  cursor: pointer;
+  color: #0cacf9;
+  line-height: 22px;
+  padding: 0px 5px 0px 0px;
+  background-color: rgb(232, 197, 154);
+  -moz-text-shadow: 1px 1px 2px #000;
+  -webkit-text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#wistia #controls .played .ui-slider-range {
+  background: #fff;
+  border-right: 4px solid #fff;
+}
+
+#wistia #controls .played .ui-slider-handle {
+  /* display: none; */
+  border-radius: 15px;
+  top: -4px;
+  /* right: -11px; */
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
+#wistia #controls .played .ui-slider-handle:hover,
+#wistia #controls .played .ui-slider-handle:active {
+  border-radius: 15px;
+  top: -6px;
+  left: -5px;
+  /* right: -11px; */
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+#wistia #controls #time {
+  text-align: right;
+  float: left;
+  /* width: 0%; */
+  padding: 0px 10px 0px 3px;
+  line-height: 31px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#wistia::full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+::-moz-full-screen #wistia {
+  width: 100%;
+  height: 100%;
+}
+
+#wistia::-moz-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#wistia::-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#select-style #wistia #controls .control-bar {
+  height: 32px;
+}
+
+#wistia #controls .cc-control {
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'verdana', sans-serif;
+  color: #acacac;
+  float: right;
+  /* margin: 1px 0px 0px 10px; */
+  cursor: pointer;
+  width: 48px;
+  padding-right: 5px;
+  /* height: 12px; */
+  position: relative;
+}
+#wistia #controls .cc-control:hover{
+  background-color: rgb(145, 59, 6)!important;
+}
+#wistia #controls .cc-control img{
+  position: fixed;
+  /* width: 33px; */
+  height: 35px;
+  /* right: 8px; */
+  transition: scale 0.1s;
+}
+#wistia #controls .cc-control img:active{
+  scale: 1.2;
+}
+
+#wistia #controls .cc-control.enabled {
+  padding-right: 5px;
+  width: 48px;
+  /* height: 12px; */
+  position: relative;
+  color: #fff;
+}
+
+#select-style #wistia #controls .cc-control {
+  margin: 1px 0px 0px 10px;
+}
+
+#wistia div#qualitySelector {
+  width: 40px!important;
+  margin-right: 6px;
+}
+
+#wistia div#qualitySelector img{
+  cursor: pointer;
+  height: 32px;
+  position: fixed;
+}
+#wistia div#qualitySelector img:hover{
+  background-color: rgb(145, 59, 6)!important;
+  /* scale: 1.2; */
+}

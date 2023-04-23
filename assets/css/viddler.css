@@ -1,0 +1,391 @@
+#select-style #viddler #controls .control-bar #time {
+  padding: 0px;
+}
+
+
+/*** viddler ***/
+
+#viddler {
+  position: relative;
+  margin: 0px auto;
+  /* max-width: 960px; */
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 12px !important;
+}
+
+#viddler .video-container {
+  position: relative;
+  padding-bottom: 0 !important
+    /*56.25%;*/
+  ;
+  height: auto !important
+    /*0*/
+  ;
+  overflow: auto !important
+    /*hidden*/
+  ;
+}
+
+#viddler {
+  width: 100%;
+  height: 100%;
+  /* background: black; */
+}
+
+#viddler:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#viddler:-webkit-full-screen .video-container {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#viddler .video-container video {
+  position: relative !important
+    /*absolute*/
+  ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+#viddler .video-container .video-js {
+  position: unset;
+}
+
+#viddler .play-center {
+  width: 125px;
+  height: 120px;
+  margin: -35px auto 0px;
+  position: absolute;
+  top: 47%;
+  left: -25px;
+  right: 0px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+#viddler .play-center:after {
+  background: url(../gfx/play.png) no-repeat top left / 130px 120px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -19px;
+  left: 17px;
+}
+
+#viddler #controls {
+  position: absolute;
+  padding: 0px 40px 21px 40px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2147483647;
+  margin: 0 auto;
+  display: flex;
+}
+
+#viddler #controls .pp-button {
+  /* float: left; */
+  position: relative;
+  /* height: 35px; */
+  width: 50px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  cursor: pointer;
+  /* background: rgba(255, 201, 14, 0.8); */
+}
+
+#viddler #controls .pp-button:hover {
+  /* background-color: rgb(145, 59, 6)!important; */
+}
+
+#viddler #controls .pp-button:after {
+  background: url(../gfx/play.svg) no-repeat top left / 30px 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 4px;
+}
+
+#viddler #controls .playing:after {
+  background: url(../gfx/pause.svg) no-repeat top left / 30px 30px;
+  /* background-position: bottom left !important; */
+}
+
+#viddler #controls .fullscreen {
+  margin-top: 4px;
+  height: 26px;
+}
+
+#viddler #controls .fullscreen path {
+  fill: #fff;
+}
+
+#select-style #viddler #controls .fullscreen {
+  bottom: 9px;
+}
+
+/*#viddler #controls button.volume {margin: 0px 4px;}*/
+
+
+#viddler #controls .control-bar {
+  height: 24px;
+  width: 100%;
+  /* margin: 0px 96px 0px 0px; */
+  position: relative;
+  border: 4px solid rgba(255, 201, 14, 0.8);
+  background: rgba(208, 183, 91, 0.80);
+}
+
+#viddler #controls #time {
+  text-align: right;
+  float: left;
+  margin: 0px 18px 0px 22px;
+  line-height: 31px;
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#viddler #controls #duration {
+  text-align: right;
+  float: left;
+  margin: 0px 8px 0px 22px;
+  line-height: 31px;
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#viddler::full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+::-moz-full-screen #viddler {
+  width: 100%;
+  height: 100%;
+}
+
+#viddler::-moz-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#viddler::-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#select-style #viddler #controls .control-bar {
+  height: 32px;
+}
+
+#viddler #controls .cc-control {
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'verdana', sans-serif;
+  color: #acacac;
+  float: right;
+  /* margin: 1px 0px 0px 10px; */
+  cursor: pointer;
+  width: 48px;
+  padding-right: 5px;
+  /* height: 12px; */
+  position: relative;
+}
+
+#viddler #controls .cc-control:hover {
+  /* background-color: rgb(145, 59, 6)!important; */
+}
+
+#viddler #controls .cc-control img {
+  position: fixed;
+  /* width: 33px; */
+  height: 35px;
+  /* right: 8px; */
+  transition: scale 0.1s;
+}
+
+#viddler #controls .cc-control img:active {
+  scale: 1.2;
+}
+
+#viddler #controls .cc-control.enabled {
+  padding-right: 5px;
+  width: 48px;
+  /* height: 12px; */
+  position: relative;
+  color: #fff;
+}
+
+#select-style #viddler #controls .cc-control {
+  margin: 1px 0px 0px 10px;
+}
+
+#viddler div#qualitySelector {
+  width: 40px !important;
+  margin-right: 6px;
+}
+
+#viddler div#qualitySelector img {
+  cursor: pointer;
+  height: 32px;
+  position: fixed;
+}
+
+#viddler div#qualitySelector img:hover {
+  /* background-color: rgb(145, 59, 6)!important; */
+  /* scale: 1.2; */
+}
+
+#viddler #controls .progress {
+  display: flex;
+  margin-top: 0.9em;
+  border: 1px solid rgb(0 0 0);
+  height: 7px;
+  width: 90em;
+  top: 13px;
+  left: 10px;
+  right: 90px;
+  background: rgb(63, 64, 64);
+  -moz-box-shadow: 0px 0px 0px #000;
+  -webkit-box-shadow: 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px #000;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 6px;
+}
+
+#viddler #controls .loaded {
+  background-color: #999;
+  height: 3px;
+  cursor: pointer;
+  width: 0%;
+  max-width: 99.5%;
+  border: 1px solid rgb(63, 64, 64);
+  border-radius: 6px;
+}
+
+#viddler #controls .played {
+  /* position: absolute; */
+  /* top: -6px; */
+  /* left: 13px; */
+  right: 0px;
+  bottom: 0px;
+  height: 4px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#viddler #controls .played .ui-slider-range {
+  background-color: #00adef;
+  /* border: 1px solid rgb(63, 64, 64); */
+  border-radius: 6px;
+  height: 5px;
+}
+
+#viddler #controls .played .ui-slider-handle {
+  display: none;
+  border: 1px solid rgb(63, 64, 64);
+  border-radius: 6px;
+}
+
+#viddler #controls .volume {
+  position: relative;
+  width: 25px;
+  margin: 4px 9px 0px 0px;
+}
+
+#viddler #controls .volume img {
+  float: left;
+  width: 72%;
+}
+
+#viddler #controls .volume path {
+  fill: #fff;
+}
+
+#viddler #controls .volume path:hover {
+  fill: #00adef;
+}
+
+#viddler #controls .volume span.mute {
+  float: left;
+  color: #909598;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+
+#viddler #controls .volume.mute span.mute {
+  opacity: 1;
+  display: block;
+}
+
+#viddler #controls .volume.mute span.mute.hide {
+  opacity: 0;
+}
+
+#viddler #controls .volume svg {
+  cursor: pointer;
+  width: 25px;
+}
+
+#viddler #controls .volume #volume-bar {
+  width: 28px;
+  height: 83px;
+  bottom: 56px;
+  /* border: 1px solid #c0bfbf; */
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  /* bottom: 42px; */
+  left: -2px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 4px;
+}
+
+#viddler #controls .volume #volume-bar .played {
+  cursor: pointer;
+}
+
+#viddler #controls .volume #volume-bar .played .ui-slider-range {
+  background: #2c849a;
+}
+
+#viddler #controls .volume #volume-bar .played .ui-slider-handle {
+  display: block;
+  cursor: pointer;
+  background: fffff;
+  border: 1px solid #c0bfbf;
+  width: 6px;
+  height: 6px;
+  left: -2px !important;
+  border-radius: 6px;
+}
+
+#viddler #controls .volume #volume-bar #volume-control {
+  margin: 11px auto;
+  background-color: #555454;
+  width: 4px;
+  height: 63px;
+  border-radius: 6px;
+}
+
+#select-style #viddler #controls .progress {
+  height: 12px;
+}
