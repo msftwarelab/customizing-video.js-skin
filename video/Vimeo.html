@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <title>KillerPlayer.com | Video</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Video" />
+  <meta name="keywords" content="Video" />
+  <!--<meta name="distribution" content="GLOBAL" />-->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta property="og:image" content="https://i.ytimg.com/vi/uD4izuDMUQA/sddefault.jpg">
+  <meta property="og:title" content="TIMELAPSE OF THE FUTURE: A Journey to the End of Time (4K)">
+
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic'
+    rel='stylesheet' type='text/css' />
+
+  <link rel="stylesheet" type="text/css" href="https://killerplayer.com/watch/assets/css/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="https://killerplayer.com/watch/assets/css/video-js.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://killerplayer.com/watch/assets/css/videojs-http-source-selector.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/main-video.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="https://killerplayer.com/watch/assets/css/main-video.css"/> -->
+
+  <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <script type="text/javascript" src="https://killerplayer.com/watch/assets/js/html5shiv.js"></script>
+        <![endif]-->
+
+  <script type="text/javascript">
+
+    var settings = {
+      autoplay: 'no',
+      showcontrol: 'yes',
+      allowpause: 'yes',
+      controlcolor: '#172322',
+      progresscolor: '#00adef',
+      quality: 'yes',
+      url: 'https://killerplayer.com/watch/',
+      id: '1a8f03d6-39a3-41df-87cb-483d1df9191f',
+      type: 'vimeo',
+      vjs: {
+        sources: [{
+          src: 'https://sitemeta.org/manifest.googlevideo.com/api/manifest/hls_variant/expire/1682310725/ei/5bFFZMTBGoLD1gLB-pfYDQ/ip/45.192.133.79/id/b83e22cee0cc5100/source/youtube/requiressl/yes/playback_host/rr2---sn-5hnekn7d.googlevideo.com/mh/D4/mm/31%2C29/mn/sn-5hnekn7d%2Csn-5hne6n6l/ms/au%2Crdu/mv/m/mvi/2/pl/22/tx/24453783/txs/24453782%2C24453783/hfr/1/demuxed/1/tts_caps/1/maudio/1/initcwndbps/236250/vprv/1/go/1/mt/1682288934/fvip/1/nvgoi/1/short_key/1/ncsapi/1/keepalive/yes/fexp/24007246/dover/13/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Ctx%2Ctxs%2Chfr%2Cdemuxed%2Ctts_caps%2Cmaudio%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRgIhAIEAQTthpZ3NL5Q0Ds4Q1vhdXv86D-kj0vn23MrPXr4pAiEApkCJTrvw_KJZYT-zlmyNp62zTdR1biSZUz7h7O2xYNA%3D/lsparams/playback_host%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps/lsig/AG3C_xAwRQIhAIQ65gG7c8Y-13scf9sizQ0YQYSaIboFp4TaLQty12iuAiBBXGX6vuzE2vV1PJ_wS5_5wA6X7gF0a3BzF1dPEf8yWA%3D%3D/file/index.m3u8',
+          type: 'application/x-mpegURL'
+        }]
+      }
+    };
+
+  </script>
+
+
+</head>
+
+<body>
+  <!--RODOLFO add customPlayer class to hide it till the page is fully loaded-->
+  <div id="vimeo" class="customPlayer">
+    <div class="video-container">
+      <div id='custom_thumb' style='background-image: url(../assets/img/default.jpg);'></div>
+      <video playsinline id="video" class="video-js vjs-fill" width="745" height="419">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <div id="controls">
+      <span id="action" class="pp-button" title="Play"></span>
+      <div class="control-bar">
+        <div class="progress">
+          <div id="loaded" class="loaded"></div>
+          <div id="played" class="played"></div>
+        </div>
+        <div id="volume" class="volume mute">
+          <div id="volume-bar" style="display:none">
+            <div id="volume-control" class="played"></div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-volume-icon="true" id="mute">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M20 12C20 15.7277 17.4505 18.8599 14 19.7479V21.7999C18.5645 20.8734 22 16.8379 22 12C22 7.16206 18.5645 3.12655 14 2.20001V4.25201C17.4505 5.1401 20 8.2723 20 12ZM18 12C18 9.38754 16.3304 7.16506 14 6.34139V8.53511C15.1956 9.22672 16 10.5194 16 12C16 13.4805 15.1956 14.7732 14 15.4648V17.6586C16.3304 16.8349 18 14.6124 18 12ZM6.58579 8.00396H4C2.89543 8.00396 2 8.89939 2 10.004V14.004C2 15.1085 2.89543 16.004 4 16.004H6.58579L10.2929 20.7111C10.9229 21.341 12 20.8949 12 20.004V4.00396C12 3.11305 10.9229 2.66689 10.2929 3.29685L6.58579 8.00396Z">
+            </path>
+          </svg>
+          <span class="mute hide">x</span>
+        </div>
+        <div class="cc-control enabled">
+          <img src="../assets/gfx/caption.svg" alt="" />
+        </div>
+        <div id="qualitySelector" class="video-js vjs-control">
+          <div class="vjs-http-source-selector vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hover">
+            <button id="qualitySelector-btn" class="vjs-menu-button vjs-menu-button-popup vjs-button" type="button"
+              aria-disabled="false" aria-haspopup="true" aria-expanded="false"><span class="vjs-icon-placeholder"
+                aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite"></span></button>
+            <div id="qualitySelector-menu" class="vjs-menu vjs-hidden">
+              <ul class="vjs-menu-content" role="menu">
+                <li id="v-speed-btn" class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                  aria-checked="false">
+                  <span class="vjs-menu-item-text">Speed</span>
+                  <span class="vjs-menu-item-text c-speed mr-17">1x</span>
+                </li>
+                <ul class="vjs-sub-menu-content speed-menu" role="menu">
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">0.5</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">0.75</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">1</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">1.25</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">1.5</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">1.75</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                  <li class="vjs-menu-item speed-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text speed-text">2</span>
+                    <span class="vjs-control-text" aria-live="polite">x</span>
+                  </li>
+                </ul>
+                <li id="v-quality-btn" class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                  aria-checked="false">
+                  <span class="vjs-menu-item-text">Quality</span>
+                </li>
+                <ul class="vjs-sub-menu-content quality-menu" role="menu">
+                  <li class="vjs-menu-item quality-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text quality-text">Auto</span>
+                    <span class="vjs-control-text" aria-live="polite"></span>
+                  </li>
+                  <li class="vjs-menu-item quality-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text quality-text">360p</span>
+                    <span class="vjs-control-text" aria-live="polite"></span>
+                  </li>
+                  <li class="vjs-menu-item quality-item" tabindex="-1" role="menuitemradio" aria-disabled="false"
+                    aria-checked="false">
+                    <span class="vjs-menu-item-text quality-text">360</span>
+                    <span class="vjs-control-text" aria-live="polite">p</span>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pip-mode">
+          <img src="../assets/gfx/picture-in-picture.svg" alt="" />
+        </div>
+        <span href="#" id="fullscreen" class="fullscreen" title="Enter full screen">
+          <svg class="enter-fullscreen-icon" width="24" height="24" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16 5L17.5858 5L14.2929 8.29292C13.9024 8.68345 13.9024 9.31661 14.2929 9.70714C14.6834 10.0977 15.3166 10.0977 15.7071 9.70714L19 6.41426V8C19 8.55228 19.4477 9 20 9C20.5523 9 21 8.55228 21 8V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3H16C15.4477 3 15 3.44772 15 4C15 4.55228 15.4477 5 16 5ZM5 8.00002V6.4142L8.29292 9.70712C8.68345 10.0976 9.31661 10.0976 9.70714 9.70712C10.0977 9.3166 10.0977 8.68343 9.70714 8.29291L6.41424 5.00001L8 5.00002C8.55228 5.00002 9 4.5523 9 4.00002C9 3.44773 8.55228 3.00002 8 3.00002H4C3.73478 3.00002 3.48043 3.10537 3.29289 3.29291C3.10536 3.48044 3 3.7348 3 4.00002V8.00002C3 8.5523 3.44772 9.00001 4 9.00001C4.55228 9.00001 5 8.5523 5 8.00002ZM8.00002 19H6.4142L9.70712 15.7071C10.0976 15.3166 10.0976 14.6834 9.70712 14.2929C9.3166 13.9024 8.68343 13.9024 8.29291 14.2929L5.00001 17.5858V16C5.00001 15.4477 4.5523 15 4.00001 15C3.44773 15 3.00002 15.4477 3.00002 16L3.00002 20C3.00002 20.2652 3.10537 20.5196 3.29291 20.7071C3.48044 20.8947 3.7348 21 4.00002 21H8.00002C8.5523 21 9.00001 20.5523 9.00001 20C9.00001 19.4477 8.5523 19 8.00002 19ZM19 17.5858V16C19 15.4477 19.4477 15 20 15C20.5523 15 21 15.4477 21 16V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8947 20.2652 21 20 21H16C15.4477 21 15 20.5523 15 20C15 19.4477 15.4477 19 16 19H17.5858L14.2929 15.7071C13.9023 15.3166 13.9023 14.6834 14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L19 17.5858Z">
+            </path>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="https://killerplayer.com/watch/assets/js/jquery-1.10.1.min.js"></script>
+
+  <script type="text/javascript" src="https://killerplayer.com/watch/assets/js/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="https://killerplayer.com/watch/assets/js/video.min.js"></script>
+  <script type="text/javascript"
+    src="https://killerplayer.com/watch/assets/js/videojs-http-source-selector.min.js"></script>
+  <script type="text/javascript" src="../assets/js/player.js"></script>
+  <!-- <script type="text/javascript" src="https://killerplayer.com/watch/assets/js/player.js"></script>
+  <script type="text/javascript" src="https://killerplayer.com/watch/assets/js/skins/vimeo.js"></script> -->
+  <script type="text/javascript" src="../assets/js/skins/vimeo.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      //RODOLFO show the player after a short delay
+      switch (settings.type) {
+        case 'vzaar':
+          window.killerplayer = new Vzaar(settings);
+          break;
+        case 'viddler':
+          window.killerplayer = new Viddler(settings);
+          break;
+        case 'wistia':
+          window.killerplayer = new Wistia(settings);
+          break;
+        case 'now':
+          window.killerplayer = new Now(settings);
+          break;
+        case 'vimeo':
+          window.killerplayer = new Vimeo(settings);
+          break;
+        default:
+          window.killerplayer = new BasePlayer(settings);
+      }
+      window.killerplayer.init();
+    });
+  </script>
+</body>
+
+</html>
